@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 22 22:34:38 2018
+
+@author: rrui
+"""
+
+def birthdayCakeCandles(arr):
+    m = 0
+    maxx = max(arr)
+    for i in arr:
+        if i == maxx:
+            m = m + 1
+        else:
+            m = m + 0
+    return m
+
+arr = [3, 2, 1, 3]
+print(max(arr))
+print(birthdayCakeCandles(arr))
+
+print(arr[i])

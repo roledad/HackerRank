@@ -1,0 +1,16 @@
+def name_lookup(fname):
+    if fname == "Joe":
+        return "Warren"
+    elif fname == "Scott":
+        return "Rixner"
+    elif fname == "John":
+        return "Greiner"
+    elif fname == "Stephen":
+        return "Wong"
+    else:
+        "Error: Not an instructor"
+        
+print(name_lookup("Stephen"))
+
+fname = "Joe"
+print(fname + "'s last name is " + name_lookup(fname))

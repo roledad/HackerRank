@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 22 20:03:22 2018
+
+@author: rrui
+"""
+
+def plusMinus(arr):
+    l = len(arr)
+    p = 0
+    n = 0
+    z = 0
+    for i in arr:
+        if i > 0: p += 1
+        elif i < 0: n += 1
+        else: z += 1
+    return p/l, n/l, z/l
+
+
+arr = [-4, 3, -9, 0, 4, 1]
+print(plusMinus(arr))       
+
+
+
+        
+        
+            
+
+
