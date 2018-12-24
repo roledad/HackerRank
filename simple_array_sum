@@ -3,9 +3,3 @@ def sumofrange(ar):
     for i in ar:
         n = n + i
     return n
-
-
-
-
-           
-            
