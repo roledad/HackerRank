@@ -1,0 +1,14 @@
+def migratoryBirds(a):
+    n = [0,0,0,0,0]
+    for i in range(len(a)):
+        if a[i] == 1:
+            n[0] += 1
+        elif a[i] == 2:
+            n[1] += 1
+        elif a[i] == 3:
+            n[2] += 1
+        elif a[i] == 4:
+            n[3] += 1
+        else:
+            n[4] += 1
+    return n.index(max(n))+1
