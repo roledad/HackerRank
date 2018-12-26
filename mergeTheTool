@@ -1,0 +1,17 @@
+def merge_the_tools(string, k):
+    n = len(string)
+    t = int(n / k)
+    for i in range(0, n, k):
+        u = string[i:i+k]
+        m = ""
+        for j in range(0,k):
+            if not (u[j:j+1] in m):
+                m = m + u[j:j+1]
+        print(m)
+
+            
+
+
+if __name__ == '__main__':
+    string, k = input(), int(input())
+    merge_the_tools(string, k)
